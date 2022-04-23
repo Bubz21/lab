@@ -1,0 +1,32 @@
+import classes
+from caden_marek import *
+
+
+class MyTestCase(classes.TestCase):
+  def test_power(self):
+    self.assertEqual(power(True), True)
+    self.assertEqual(power(False), False)
+  
+  
+  def test_channel_up(self):
+    self.assertEqual(channel_up(0), 0)
+    self.assertEqual(channel_up(-1), 0)
+    self.assertEqual(channel_up(2), 1)
+    
+  
+  def test_channel_down(self):
+    self.assertEqual(channel_down(0), 0)
+    self.assertEqual(channel_down(-1), 0)
+    self.assertEqual(channel_down(2), 3)
+  
+  
+  def test_volume_up(self):
+    self.assertEqual(volume_up(0), 0)
+    self.assertEqual(volume_up(-1), 0)
+    self.assertEqual(volume_up(1), 1)
+  
+  
+  def test_volume_down(self):
+    self.assertEqual(volume_down(0), 0)
+    self.assertEqual(volume_down(-1), 0)
+    self.assertEqual(volume_down(1), 2)
