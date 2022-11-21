@@ -18,7 +18,7 @@ class Account:
     :return: False if the transaction is unsucussesful
     """
     if amount > 0:
-      self.__account_balance = self.__account_balance + amount
+      self.__account_balance = self.__account_balance + amount # adds the amount to the current balance
       return True
     else:
       return False
@@ -30,7 +30,7 @@ class Account:
   :return: False if the transaction is unsucussesful
   """
     if (amount > 0) and (amount < account_balance):
-      self.__account_balance = self.__account_balance - amount
+      self.__account_balance = self.__account_balance - amount # subtracts the amount from the current balance
       return True
     else:
       return False
